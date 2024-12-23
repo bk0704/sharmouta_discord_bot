@@ -40,13 +40,8 @@ class Sharmouta(commands.Bot):
 
         # Sync slash commands
         try:
-            if GUILD_ID:
-                guild = discord.Object(id=int(GUILD_ID))
-                await self.tree.sync(guild=guild)
-                print('Commands synced to guild')
-            else:
-                await self.tree.sync()
-                print('Commands synced globally')
+            await self.tree.sync()
+            print('Commands synced globally')
             # Debug: Print all registered commands
             print("Registered commands:")
             for cmd in self.tree.get_commands():
