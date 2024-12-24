@@ -1,10 +1,10 @@
 from discord import app_commands
 from discord.ext import commands
-from utils.api import search_wikipedia
-from utils.api import get_random_article
-from utils.api import get_trending_articles
-from utils.api import get_article_categories
-from utils.api import get_article_sections
+from utils.wikipedia_api import search_wikipedia
+from utils.wikipedia_api import get_random_article
+from utils.wikipedia_api import get_trending_articles
+from utils.wikipedia_api import get_article_categories
+from utils.wikipedia_api import get_article_sections
 import discord
 
 class Wiki(commands.Cog):
